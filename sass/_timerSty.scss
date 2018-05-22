@@ -1,0 +1,29 @@
+.timer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-timer {
+    text-align: center;
+    font-family: monospace;
+    font-size: 65px;
+    margin: auto;
+    line-height: 3.3;
+    width: 242px;
+    height: 226px;
+    border: 1px solid;
+    border-radius: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.timer-captures {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

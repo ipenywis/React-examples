@@ -17,6 +17,7 @@
     "author": "Islem Penywis",
     "license": "MIT ",
     "dependencies": {
+        "@blueprintjs/core": "^3.7.0",
         "axios": "^0.18.0",
         "babel": "^6.23.0",
         "babel-env": "^2.4.1",
@@ -28,11 +29,13 @@
         "laravel-mix": "^2.0.0",
         "react": "^16.2.0",
         "react-dom": "^16.2.0",
+        "react-transition-group": "^2.4.0",
         "webpack": "^3.11.0",
         "webpack-dev-server": "^1.14.1",
         "webpack-node-externals": "^1.6.0"
     },
     "devDependencies": {
+        "@blueprintjs/icons": "^3.2.0",
         "babel-preset-es2015": "^6.24.1"
     }
 }

@@ -1,0 +1,126 @@
+//Blueprint Style 
+@import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css";
+.inner-container {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sub-header {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    .draggable-container {
+        min-width: 40em;
+        max-width: 45em;
+        min-height: 20em;
+        max-height: 18em;
+        background-color: rgba(147, 148, 148, 0.23);
+        padding: 6px;
+        border-radius: 4px;
+        border: 2px dashed rgba(95, 92, 92, 0.2);
+        font-size: 14px;
+        display: flex;
+        margin-bottom: 7px;
+        position: relative;
+        overflow: hidden;
+        #file-browser-input {
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            color: transparent;
+            opacity: 0;
+        }
+        .files-preview-container {
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            z-index: 99;
+            overflow-x: auto;
+            overflow-y: hidden;
+            flex-shrink: 0;
+            padding: 5px;
+            .file {
+                width: 5em;
+                height: 58px;
+                background-color: rgba(101, 97, 97, 0.34);
+                position: relative;
+                margin-left: 8px;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                box-shadow: 0px 0px 14px 3px rgba(15, 15, 15, 0.2);
+                flex-shrink: 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .container {
+                    display: flex;
+                    position: absolute;
+                    flex-direction: column;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    transition: background, 160ms ease-in-out;
+                    &:hover {
+                        background-color: rgba(154, 151, 151, 0.29);
+                        .remove-btn {
+                            visibility: visible;
+                        }
+                    }
+                    .remove-btn {
+                        color: #ca4240;
+                        width: fit-content;
+                        position: absolute;
+                        right: -7px;
+                        top: -7px;
+                        z-index: 99;
+                        cursor: pointer;
+                        visibility: hidden;
+                    }
+                    .progress-bar {
+                        position: absolute;
+                        width: 53px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        display: flex;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+        .helper-text {
+            position: absolute;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #797676;
+        }
+        .file-browser-container {
+            position: absolute;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

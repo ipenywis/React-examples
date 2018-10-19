@@ -7499,3 +7499,21 @@ Licensed under the terms of the LICENSE file distributed with this project.
           align-items: center;
 }
 
+.ip-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.ip-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  background-color: #42576b;
+  height: 5px;
+}
+
+.ip-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #42576b;
+  /* border-radius: 4px; */
+  /* background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent); */
+}
+
